@@ -11,13 +11,9 @@ let g:airline_left_sep = ''
 let g:airline_right_sep = ''
 
 " Switch to your current theme
-let g:airline_theme = 'onedark'
+colorscheme palenight
+let g:airline_theme = 'palenight'
 
-" Always show tabs
-set showtabline=2
-
-" We don't need to see things like -- INSERT -- anymore
-set noshowmode
 
 " Customize whitespace checking
 let g:airline#extensions#whitespace#mixed_indent_algo = 2

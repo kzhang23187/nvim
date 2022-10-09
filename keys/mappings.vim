@@ -1,23 +1,25 @@
+" Clear highlights from hlsearch
 nnoremap <silent> <Esc><Esc> :nohlsearch<CR>
-:nmap <Leader>; :norm A;<Esc>
+" Shorthand for saving
 nnoremap <Leader>w :w<CR>
 
-" " Copy to clipboard
+" Copy to clipboard
 nnoremap <Leader>ya :%y+<CR>
-vnoremap  <leader>y  "+y
+vnoremap  y  "+y
 nnoremap  <leader>Y  "+yg_
-nnoremap  <leader>y  "+y
+"nnoremap  <leader>y  "+y
 nnoremap  <leader>yy  "+yy
 
-" Better nav for omnicomplete
-inoremap <expr> <c-j> ("\<C-n>")
-inoremap <expr> <c-k> ("\<C-p>")
+" Remap shortcut for omnicomplete
+"inoremap <expr> <c-j> ("\<C-n>")
+"inoremap <expr> <c-k> ("\<C-p>")
+
 
 " Use alt + hjkl to resize windows
-nnoremap ∆    :resize +2<CR>
-nnoremap ˚    :resize -2<CR>
-nnoremap ˙    :vertical resize +2<CR>
-nnoremap ¬    :vertical resize -2<CR>
+"nnoremap ∆    :resize +2<CR>
+"nnoremap ˚    :resize -2<CR>
+"nnoremap ˙    :vertical resize +2<CR>
+"nnoremap ¬    :vertical resize -2<CR>
 
 " I hate escape more than anything else
 inoremap jk <Esc>
@@ -38,6 +40,7 @@ nnoremap <S-TAB> :bprevious<CR>
 " nnoremap <C-Q> :wq!<CR>
 " Use control-c instead of escape
 nnoremap <C-c> <Esc>
+
 " <TAB>: completion.
 inoremap <expr><TAB> pumvisible() ? "\<C-n>" : "\<TAB>"
 
@@ -59,10 +62,7 @@ nnoremap <Leader>O O<Esc>^Da
 " gT - prev tab
 
 " NERDTree Mappings
-map <C-n> :NERDTreeToggle<CR>
-
-" FZF Mappings
-nnoremap <silent> <leader><space> :Files<CR>
+"map <C-n> :NERDTreeToggle<CR>
 
 " NerdCommenter
 " add keybinding in iterm2 which maps cmd-/ to send ++ 
